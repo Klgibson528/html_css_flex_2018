@@ -6,21 +6,84 @@
         </title>
     </head>
 <style>
-    .ul {
-        list-style-type: none
+    body {
+        font-size: small;
+        font-family: arial, sans-serif;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        float: left;
+        padding: 15px;
+    }
+    
+    .left {
+        text-align: left;
+    }
+    .buttons {
+        background-color: #F5F5F5;
+        text-align: center;
+        width: 7rem ;
+        padding: .5rem;
+        float: left;
+        margin: 1rem;
+    }
+    
+
+    .center-block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+    #mic {
+        text-align: right;
+        width: 40px;
+    }
+    #logo {
+        width: 27%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #search {
+        width: 27%;
+        border-color: #F5F5F5;
+        border-width: 2px;
+        border-style: solid;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 </style>
     <body>
         <div>
             <ul>
-                <li>"About"</li>
-                <li>"Store"</li>
-                <li>Gmail</li>
-                <li>Images</li>
+                <li>About</li>
+                <li>Store</li>
+                <li class= "left">Gmail</li>
+                <li class= "left">Images</li>
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
+        </div>
+        <div id="logo">
+            <img src="https://dc-class.herokuapp.com/static/fullstack/projects/google/google_main_img.png" alt = "google image"></img>
+        </div>
+        <div class="center-block" id="search">
+            <img id="mic" src="http://www.thesempost.com/wp-content/uploads/2015/09/google-mic-icon.png" alt = "google mic"></img> 
+        </div>
+        <div>
+        <div class="buttons">
+            Google Search
+        </div>
+        <div class="buttons">I'm Feeling Lucky</div>
+        </div>
         </div>
     </body>
 </html>
